@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="all.min.css" />
+    <title>Dice Game</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="side lSide">
+          <p class="name">PLAYER 1</p>
+          <p class="player-one-score score">0</p>
+          <div>
+            <p>CURRENT</p>
+            <p class="player-one-current-score">0</p>
+          </div>
+        </div>
+        <div class="side rSide">
+          <p class="name">PLAYER 2</p>
+          <p class="player-two-score score">0</p>
+          <div>
+            <p>CURRENT</p>
+            <p class="player-two-current-score">0</p>
+          </div>
+        </div>
+        <button class="btn new-game-btn">NEW GAME</button>
+        <button class="btn roll-dice-btn">ROLL DICE</button>
+        <button class="btn hold-btn">HOLD</button>
+        <div class="dice dice1 hidden"></div>
+        <div class="dice dice2 hidden"></div>
+        <div class="dice dice3 hidden"></div>
+        <div class="dice dice4 hidden"></div>
+        <div class="dice dice5 hidden"></div>
+        <div class="dice dice6 hidden"></div>
+      </div>
+      <div class="modal-window hidden">
+        <div class="modal-content">
+          <button class="modal-btn close-btn">&times;</button>
+          <p>Congratulations!🎉</p>
+          <p>The Winner is player <span class="winner">1</span></p>
+          <button class="modal-btn new-game-btn">NEW GAME</button>
+        </div>
+      </div>
+      <div class="overlay hidden"></div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

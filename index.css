@@ -1,0 +1,309 @@
+@import url(https://unpkg.com/fixedsys-css/css/fixedsys.css);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap);
+:root {
+  --primary-color-10: #e6f4ff;
+  --primary-color-20: #b8dfff;
+  --primary-color-30: #8acaff;
+  --primary-color-40: #5cb6ff;
+  --primary-color-50: #2ea1ff;
+  --primary-color-60: #008cff;
+  --primary-color-70: #0074d9;
+  --primary-color-80: #005bb3;
+  --primary-color-90: #00438c;
+  --primary-color-100: #002a66;
+  --secondary-color-10: #ffe6f1;
+  --secondary-color-20: #ffb8d7;
+  --secondary-color-30: #ff8abe;
+  --secondary-color-40: #ff5ca4;
+  --secondary-color-50: #ff2e8b;
+  --secondary-color-60: #ff0071;
+  --secondary-color-70: #d90065;
+  --secondary-color-80: #b30058;
+  --secondary-color-90: #8c004c;
+  --secondary-color-100: #66003f;
+  --accent-color-v1-10: #e6ffff;
+  --accent-color-v1-20: #b8f7f8;
+  --accent-color-v1-30: #8aeff0;
+  --accent-color-v1-40: #5ce6e9;
+  --accent-color-v1-50: #2edee1;
+  --accent-color-v1-60: #00d6da;
+  --accent-color-v1-70: #00b7bd;
+  --accent-color-v1-80: #0097a0;
+  --accent-color-v1-90: #007883;
+  --accent-color-v1-100: #005866;
+  --accent-color-v2-10: #e6fffc;
+  --accent-color-v2-20: #b8f5ee;
+  --accent-color-v2-30: #8aebe0;
+  --accent-color-v2-40: #5ce0d2;
+  --accent-color-v2-50: #2ed6c4;
+  --accent-color-v2-60: #00ccb6;
+  --accent-color-v2-70: #00b1a2;
+  --accent-color-v2-80: #00978e;
+  --accent-color-v2-90: #007c7a;
+  --accent-color-v2-100: #006166;
+  --accent-color-v3-10: #e8e6ff;
+  --accent-color-v3-20: #cecaf5;
+  --accent-color-v3-30: #b4aeeb;
+  --accent-color-v3-40: #9992e0;
+  --accent-color-v3-50: #7f76d6;
+  --accent-color-v3-60: #655acc;
+  --accent-color-v3-70: #5750b3;
+  --accent-color-v3-80: #494699;
+  --accent-color-v3-90: #3b3c80;
+  --accent-color-v3-100: #2d3266;
+  --accent-color-v4-10: #e6ffeb;
+  --accent-color-v4-20: #b8f5c5;
+  --accent-color-v4-30: #8aeba0;
+  --accent-color-v4-40: #5ce27a;
+  --accent-color-v4-50: #2ed855;
+  --accent-color-v4-60: #00ce2f;
+  --accent-color-v4-70: #00b42c;
+  --accent-color-v4-80: #009a2a;
+  --accent-color-v4-90: #008027;
+  --accent-color-v4-100: #006624;
+  --accent-color-v5-10: #ffe6e9;
+  --accent-color-v5-20: #fcb8c0;
+  --accent-color-v5-30: #f88a97;
+  --accent-color-v5-40: #f55c6f;
+  --accent-color-v5-50: #f12e46;
+  --accent-color-v5-60: #ee001d;
+  --accent-color-v5-70: #cc0016;
+  --accent-color-v5-80: #aa000f;
+  --accent-color-v5-90: #880007;
+  --accent-color-v5-100: #600;
+  --accent-color-v6-10: #fff5e6;
+  --accent-color-v6-20: #ffe2b8;
+  --accent-color-v6-30: #ffcf8a;
+  --accent-color-v6-40: #ffbd5c;
+  --accent-color-v6-50: #ffaa2e;
+  --accent-color-v6-60: #ff9700;
+  --accent-color-v6-70: #d97c00;
+  --accent-color-v6-80: #b36000;
+  --accent-color-v6-90: #8c4500;
+  --accent-color-v6-100: #662900;
+  --neutral-scale-14: #021028;
+  --neutral-scale-13: #0e1e38;
+  --neutral-scale-12: #1a2c47;
+  --neutral-scale-11: #324766;
+  --neutral-scale-10: #4d607d;
+  --neutral-scale-9: #61738e;
+  --neutral-scale-8: #7c8da5;
+  --neutral-scale-7: #91a1b7;
+  --neutral-scale-6: #a5b3c8;
+  --neutral-scale-5: #bac6d8;
+  --neutral-scale-4: #d6dee5;
+  --neutral-scale-3: #eaeff4;
+  --neutral-scale-2: #f4f6f9;
+  --neutral-scale-1: #fafbfc;
+  --neutral-scale-0: #fff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'fixedsys';
+  color: #e8e6ff;
+  background: url(/images/blocks.gif);
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: linear-Gradient(to top left, #2d3266, #b4aeeb8f);
+}
+.content {
+  width: 60%;
+  height: 80%;
+  background-color: transparent;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.side {
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px);
+  transition: 1.5s;
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.side .name {
+  font-size: 80px;
+  margin-top: 50px;
+  margin-bottom: 125px;
+}
+.side .score {
+  font-size: 100px;
+  margin-bottom: 125px;
+  text-align: center;
+}
+.side div {
+  width: 50%;
+  height: fit-content;
+  background-color: #2d3266;
+  align-items: center;
+  display: grid;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0px 2.3px 1.9px #7f76d628, 0px 5.8px 4.9px #7f76d613,
+    0px 11.9px 9.9px #7f76d618, 0px 24.5px 20.4px #7f76d61d,
+    0px 67px 56px #7f76d626;
+}
+.side div p {
+  font-size: 30px;
+  margin: 15px;
+}
+.rSide {
+  background-color: #cecaf51f;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  transform-origin: right;
+}
+.lSide {
+  background-color: #3b3c80ad;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  transform-origin: left;
+}
+/* .content:hover .rSide {
+  background-color: #3b3c80ad;
+}
+.content:hover .lSide {
+  background-color: #cecaf51f;
+} */
+.btn {
+  position: absolute;
+  border: none;
+  outline: none;
+  width: 200px;
+  height: 50px;
+  border-radius: 23px;
+  color: #cecaf5;
+  background-color: #2d3266;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 15px;
+  transition: 0.6s;
+  font-family: 'rubik';
+  box-shadow: 0px 2.3px 1.9px #7f76d628, 0px 5.8px 4.9px #7f76d613,
+    0px 11.9px 9.9px #7f76d618, 0px 24.5px 20.4px #7f76d61d,
+    0px 67px 56px #7f76d626;
+}
+.new-game-btn {
+  top: 10%;
+}
+.roll-dice-btn {
+  bottom: 22%;
+}
+.hold-btn {
+  bottom: 12%;
+  width: 140px;
+}
+.btn:hover {
+  transform: translate(-50%, 10px);
+}
+.dice {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  background-color: #e8e6ff;
+  left: 50%;
+  top: 25%;
+  transform: translateX(-50%);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.5s;
+}
+.hidden {
+  display: none;
+}
+.dice1 {
+  background: url(images/dice1.jpg);
+}
+.dice2 {
+  background: url(images/dice2.jpg);
+}
+.dice3 {
+  background: url(images/dice3.jpg);
+}
+.dice4 {
+  background: url(images/dice4.jpg);
+}
+.dice5 {
+  background: url(images/dice5.jpg);
+}
+.dice6 {
+  background: url(images/dice6.jpg);
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #cecaf51f;
+  backdrop-filter: blur(8px);
+  z-index: 0;
+}
+.modal-window {
+  position: absolute;
+  width: 35%;
+  height: fit-content;
+  background-color: white;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-top-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  padding: 50px;
+  color: #2d3266;
+  font-size: 48px;
+
+  box-shadow: -5px 0px 4px #3b3c80ad, 0px 3px 2px #3b3c80ad,
+    -1px 5px 9.9px #3b3c80ad, 0px 10px 16px 0px #3b3c80ad,
+    1px 8px 15px #3b3c80ad;
+}
+.modal-window .modal-content {
+  height: fit-content;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.modal-btn {
+  border-radius: 0;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background-color: #2d3266;
+  border: none;
+  outline: none;
+  color: #e8e6ff;
+  box-shadow: -5px 0px 4px #3b3c80ad, 0px 3px 2px #3b3c80ad,
+    -1px 5px 9.9px #3b3c80ad, 0px 10px 16px 0px #3b3c80ad,
+    1px 8px 15px #3b3c80ad;
+}
+.close-btn {
+  position: absolute;
+  width: 70px;
+  height: 50px;
+  font-size: 40px;
+  top: -30%;
+  right: -3%;
+}
+.modal-content .new-game-btn {
+  width: 175px;
+  height: 55px;
+  font-size: 15px;
+  margin-top: 30px;
+}
